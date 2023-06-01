@@ -18,6 +18,7 @@ fi
 
 cd $ROOTDIR/build/linux
 make -j`nproc` all
+rm ../linux-*
 make -j`nproc` bindeb-pkg
 
 cp $ROOTDIR/build/linux/arch/arm64/boot/Image $ROOTDIR/build
