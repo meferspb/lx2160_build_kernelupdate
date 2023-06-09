@@ -3,7 +3,7 @@ echo "Make Linux kernel on lx2160 with all patches from SolidRun lx2160_build"
 echo "RUN Only on board solidrun lx2160"
 pause 10
 
-apt update && apt update
+apt update && apt -y upgrade
 apt install make libncurses-dev libncurses5 dwarves build-essential gcc bc bison flex libssl-dev libelf-dev
 ROOTDIR=`pwd`
 
