@@ -4,7 +4,7 @@ echo "RUN Only on board solidrun lx2160"
 pause 10
 
 apt update && apt update
-apt install make libncurses-dev libncurses dwarves build-essential gcc bc bison flex libssl-dev libelf-dev
+apt install make libncurses-dev libncurses5 dwarves build-essential gcc bc bison flex libssl-dev libelf-dev
 ROOTDIR=`pwd`
 
 mkdir -p $ROOTDIR/build
